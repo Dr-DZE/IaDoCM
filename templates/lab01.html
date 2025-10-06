@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab01</title>
+    <link rel="stylesheet" href="/static/lab01.css">
+</head>
+
+<body>
+    <div class="image-container">
+        <div class="info-window">
+            <h2>Battery Status</h2>
+            <p><strong>Charge:</strong> <span id="charge">{{charge}}</span>%</p>
+            <p><strong>Power Mode:</strong> <span id="powerMode">{{powerMode}}</span></p>
+            <p><strong>Status:</strong> <span id="status">{{status}}</span></p>
+            <p><strong>Time Left:</strong> <span id="timeLeft">{{timeLeft}}</span> seconds</p>
+            <p><strong>Eco Mode:</strong> <span id="eco">{{eco}}</span></p>
+            <hr>
+            <h2>Battery Info</h2>
+            <pre id="batteryInfo"></pre>
+            <hr>
+            <div class="actions">
+                <a href="/" class="action-button">Main Page</a>
+                <button onclick="sleep()" class="action-button">Sleep</button>
+                <button onclick="hibernate()" class="action-button">Hibernate</button>
+            </div>
+        </div>
+        <img src="/static/gif/1-st.gif" alt="Charging..." class="charging-gif" id="chargingGif">
+    </div>
+    <script src="/static/lab01.js"></script>
+</body>
+
+</html>

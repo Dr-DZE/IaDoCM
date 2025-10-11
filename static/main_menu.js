@@ -19,3 +19,7 @@ document.querySelectorAll('.lab_button_2').forEach(btn => {
 document.querySelector('.lab_button_1').addEventListener('click', () => {
     window.location.href = '/loading';
 });
+
+document.querySelector('.lab_button_2').addEventListener('click', () => {
+    window.location.href = '/loading2';
+});

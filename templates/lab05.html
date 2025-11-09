@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab05 - USB Monitor</title>
+    <link rel="stylesheet" href="/static/lab05.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>USB Device Monitor</h1>
+        <div class="actions">
+            <a href="/" class="action-button">Main Page</a>
+            <button id="disable-mouse-btn" class="action-button">Disable Mouse</button>
+            <button id="eject-all-btn" class="action-button">Eject All Drives</button>
+        </div>
+
+        <div class="content">
+            <div class="devices-section">
+                <h2>Connected USB Drives</h2>
+                <div id="devices-list"></div>
+            </div>
+            <div class="logs-section">
+                <h2>Logs</h2>
+                <pre id="logs-container"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/static/lab05.js"></script>
+</body>
+
+</html>

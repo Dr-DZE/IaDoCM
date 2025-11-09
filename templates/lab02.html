@@ -8,7 +8,15 @@
 <body>
     <div id="device-list-window">
         <h1>PCI Devices</h1>
-        <div id="device-list"></div>
+        <div id="device-list">
+            <div class="device-item header">
+                <div class="device-cell id">#</div>
+                <div class="device-cell vendor">Vendor</div>
+                <div class="device-cell venid">Vendor ID</div>
+                <div class="device-cell devid">Device ID</div>
+                <div class="device-cell devname">Device Name</div>
+            </div>
+        </div>
     </div>
     <button id="home-button">Home</button>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

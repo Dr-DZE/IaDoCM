@@ -1,5 +1,15 @@
 {
   "dependencies": [
-    "fmt"
+    "fmt",
+    "opencv4",
+    {
+      "name": "ffmpeg",
+      "features": [
+        "swresample",
+        "swscale",
+        "avdevice",
+        "x264"
+      ]
+    }
   ]
 }

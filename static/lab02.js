@@ -25,10 +25,15 @@ axios.get('/api/lab02')
             devIdCell.classList.add('device-cell', 'devid');
             devIdCell.textContent = device.dev_id;
 
+            const devNameCell = document.createElement('div');
+            devNameCell.classList.add('device-cell', 'devname');
+            devNameCell.textContent = device.device_name;
+
             item.appendChild(idCell);
             item.appendChild(vendorCell);
             item.appendChild(venIdCell);
             item.appendChild(devIdCell);
+            item.appendChild(devNameCell);
 
             deviceList.appendChild(item);
         });

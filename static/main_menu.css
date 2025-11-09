@@ -5,108 +5,80 @@ body {
 
 .main_button {
     display: grid;
-    /* Включает flexbox для контейнера, чтобы удобно располагать дочерние элементы */
     grid-template-columns: 200px 200px;
-    /* 2 столбика одинаковой ширины */
     gap: 40% 60%;
-    /* 24px между строками, 40px между столбцами */
     justify-content: center;
-    /* Центрирует сетку по горизонтали */
     margin-top: 31vh;
 }
 
-.lab_button_1 {
+.lab-button {
+    width: 100%;
+    height: 100%;
     padding: 14px 32px;
-    /* Внутренние отступы: 14px сверху/снизу, 32px слева/справа */
     font-size: 18px;
-    /* Размер шрифта текста на кнопке */
-    height: 60px;
-    /* Высота кнопки */
     font-family: Arial, sans-serif;
-    /* Шрифт текста на кнопке */
+    color: #fff;
+    border: none;
+    background: none;
+    /* Remove background from button itself */
+    cursor: pointer;
+}
+
+[class^="button-container-"] {
+    height: 60px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, background 0.2s;
+}
+
+[class^="button-container-"]:hover {
+    transform: scale(1.05);
+}
+
+.button-container-1 {
     background: linear-gradient(90deg, #000000 0%, #dc1515 100%);
-    /* Градиентный фон кнопки слева направо */
-    color: #fff;
-    /* Цвет текста — белый */
-    border: none;
-    /* Убирает стандартную рамку кнопки */
-    border-radius: 8px;
-    /* Скругляет углы кнопки */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    /* Тень под кнопкой для объема */
-    cursor: pointer;
-    /* При наведении курсор становится "рукой" */
-    transition: background 0.2s, transform 0.2s;
-    /* Плавные переходы для фона и масштаба при наведении */
 }
 
-.lab_button_1:hover {
+.button-container-1:hover {
     background: linear-gradient(90deg, #dc1515 0%, #000000 100%);
-    /* Меняет направление и цвета градиента при наведении */
-    transform: scale(1.05);
-    /* Увеличивает кнопку на 5% при наведении */
 }
 
-.lab_button_2 {
-    padding: 14px 32px;
-    /* Внутренние отступы: 14px сверху/снизу, 32px слева/справа */
-    font-size: 18px;
-    /* Размер шрифта текста на кнопке */
-    height: 60px;
-    /* Высота кнопки */
-    font-family: Arial, sans-serif;
-    /* Шрифт текста на кнопке */
+.button-container-2 {
     background: linear-gradient(90deg, #dc1515 0%, #000000 100%);
-    /* Градиентный фон кнопки слева направо */
-    color: #fff;
-    /* Цвет текста — белый */
-    border: none;
-    /* Убирает стандартную рамку кнопки */
-    border-radius: 8px;
-    /* Скругляет углы кнопки */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    /* Тень под кнопкой для объема */
-    cursor: pointer;
-    /* При наведении курсор становится "рукой" */
-    transition: background 0.2s, transform 0.2s;
-    /* Плавные переходы для фона и масштаба при наведении */
 }
 
-.lab_button_2:hover {
+.button-container-2:hover {
     background: linear-gradient(90deg, #000000 0%, #dc1515 100%);
-    /* Меняет направление и цвета градиента при наведении */
-    transform: scale(1.05);
-    /* Увеличивает кнопку на 5% при наведении */
 }
 
-.lab_button_n {
-    padding: 14px 32px;
-    /* Внутренние отступы: 14px сверху/снизу, 32px слева/справа */
-    font-size: 18px;
-    /* Размер шрифта текста на кнопке */
-    height: 60px;
-    /* Высота кнопки */
-    font-family: Arial, sans-serif;
-    /* Шрифт текста на кнопке */
-    background: linear-gradient(180deg, #000000 0%, #dc1515 100%);
-    /* Градиентный фон кнопки слева направо */
-    color: #fff;
-    /* Цвет текста — белый */
-    border: none;
-    /* Убирает стандартную рамку кнопки */
-    border-radius: 8px;
-    /* Скругляет углы кнопки */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    /* Тень под кнопкой для объема */
-    cursor: pointer;
-    /* При наведении курсор становится "рукой" */
-    transition: background 0.2s, transform 0.2s;
-    /* Плавные переходы для фона и масштаба при наведении */
+.button-container-3 {
+    background: linear-gradient(90deg, #000000 0%, #800080 100%);
 }
 
-.lab_button_n:hover {
-    background: linear-gradient(180deg, #dc1515 0%, #000000 100%);
-    /* Меняет направление и цвета градиента при наведении */
-    transform: scale(1.05);
-    /* Увеличивает кнопку на 5% при наведении */
+.button-container-3:hover {
+    background: linear-gradient(90deg, #800080 0%, #000000 100%);
+}
+
+.button-container-4 {
+    background: linear-gradient(90deg, #800080 0%, #000000 100%);
+}
+
+.button-container-4:hover {
+    background: linear-gradient(90deg, #000000 0%, #800080 100%);
+}
+
+.button-container-5 {
+    background: linear-gradient(90deg, #000000 0%, #00ff00 100%);
+}
+
+.button-container-5:hover {
+    background: linear-gradient(90deg, #00ff00 0%, #000000 100%);
+}
+
+.button-container-6 {
+    background: linear-gradient(90deg, #00ff00 0%, #000000 100%);
+}
+
+.button-container-6:hover {
+    background: linear-gradient(90deg, #000000 0%, #00ff00 100%);
 }

@@ -1,3 +1,6 @@
+const params = new URLSearchParams(window.location.search);
+const redirectUrl = params.get('redirect') || '/';
+
 setTimeout(() => {
-    window.location.href = '/lab01';
+    window.location.href = redirectUrl;
 }, 1450);

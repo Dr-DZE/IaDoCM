@@ -1,0 +1,75 @@
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 4c8a795f155c4cc29737e833f242a2e985e95ff765f6ff03c9b0db94b5b9cb0d
+Status: install ok installed
+
+Package: vcpkg-cmake-get-vars
+Version: 2025-05-29
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 6817659243427ffdb734f8952bb9f54200b207a36ba96349dfe4d12d28f335c2
+Status: install ok installed
+
+Package: vcpkg-make
+Version: 2025-09-14
+Depends: vcpkg-cmake-get-vars
+Architecture: x64-windows
+Multi-Arch: same
+Abi: dbc99333981eb336893600342bee21fb1da5b8e386d5f033fd0bab59c9b7c9df
+Status: install ok installed
+
+Package: x264
+Version: 0.164.3108
+Port-Version: 2
+Depends: vcpkg-make
+Architecture: x64-windows
+Multi-Arch: same
+Abi: e58d89648bf57e8b7d7a6cae250b6ee03bdadffcfed7c76e2472c515be956944
+Description: x264 is a free software library and application for encoding video streams into the H.264/MPEG-4 AVC compression format
+Default-Features: asm, gpl
+Status: install ok installed
+
+Package: x264
+Feature: asm
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enable platform-specific assembly optimizations
+Status: install ok installed
+
+Package: x264
+Feature: gpl
+Architecture: x64-windows
+Multi-Arch: same
+Description: Allow use of GPL code, the resulting libs and binaries will be under GPL
+Status: install ok installed
+
+Package: vcpkg-tool-meson
+Version: 1.9.0
+Depends: vcpkg-cmake-get-vars
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 40dd2061aeb8559cc6bc733ad1e12fcec5937d2b5e8a01e6e008ce5593a2d46a
+Description: Meson build system
+Status: install ok installed
+
+Package: pkgconf
+Version: 2.5.1
+Port-Version: 1
+Depends: vcpkg-tool-meson
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 91c804342fd0ea297cfcaafc655f8ea346989d61178cf426c15575ad8bca2978
+Description: pkgconf is a program which helps to configure compiler and linker flags for development libraries. It is similar to pkg-config from freedesktop.org.
+Status: install ok installed
+
+Package: vcpkg-pkgconfig-get-modules
+Version: 2024-04-03
+Depends: pkgconf
+Architecture: x64-windows
+Multi-Arch: same
+Abi: fe39b2e091c6f7f41d331577203b08ade3ebe465b44804c85a7ac4f4922b0c08
+Status: install ok installed
+
